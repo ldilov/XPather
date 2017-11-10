@@ -17,6 +17,12 @@ Chrome extension for XPath operations on current document, reliable and easy to 
 - Added toggle switch, to toggle between searching xpath by normalizing the input or without normalization. When toggle is on, it uses jquery.expath(xpathSelector), when it is off, it uses jquery.xpath(xpathSelector).
 - Added multiline support for the xpath path field.
 
+### Buttons
+
+Floppy button - generates normalized xpath selector from your input
+Refresh button - performs a new xpath search (refreshes the result)
+Toggle button - used to toggle between normal xpath searching and normalization enabled xpath searching.
+
 ### Keyboard shortcuts
 
 <kbd>Alt+X</kbd> - toggle XPather
