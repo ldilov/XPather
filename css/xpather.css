@@ -50,7 +50,7 @@ textarea::-webkit-scrollbar-thumb {
 	width: 87%;
 	height: 44px;
 	outline: 0;
-	border: 1px solid white;
+	border:0;
 	background: #000 !important;
 	box-shadow: none;
 	color: #fff !important;
@@ -61,6 +61,29 @@ textarea::-webkit-scrollbar-thumb {
 	font-size: 16px;
 	font-family: 'Droid Sans Mono', monospace;
 	line-height: 42px;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.fa-refresh:hover{
+	color: yellow;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.fa-refresh{
+	color:white;
+}
+
+.fa-floppy-o:hover{
+	color: yellow;
+}
+
+.fa-floppy-o{
+	color:white;
 }
 
 #xpather-xpath::-webkit-input-placeholder {
@@ -85,12 +108,19 @@ textarea::-webkit-scrollbar-thumb {
 .switch {
 	position: absolute;
 	display: inline-block;
-	margin-left: 70px;
+	margin-left: 40px;
 	margin-top: 5px;
 	width: 60px;
 	height: 34px;
   }
   
+.menu-nav {
+	position: absolute;
+	display: inline-block;
+	margin-left: 120px;
+	margin-top: 2px;
+}
+
   /* Hide default HTML checkbox */
   .switch input {display:none;}
   

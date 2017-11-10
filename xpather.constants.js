@@ -9,6 +9,10 @@ var xpatherHTML = '\
 			<input id="isNormalized" type="checkbox">\
 			<span class="slider"></span>\
 		</label>\
+		<label class="menu-nav">\
+			<i id="refreshPath" class="fa fa-refresh fa-4x"></i>\
+			<i id="normalizedSave" class="fa fa-floppy-o fa-4x"></i>\
+		</label>\
 	</xpather>\
 	<xpather id="xpather-sidebar">\
 		<xpather id="xpather-sidebar-spacer"></xpather>\

@@ -81,10 +81,8 @@ function find(force) {
 
 	try {
 		if($('#isNormalized')[0].checked){
-			console.log("CHECKEDD!");
 			result = $doc.expath(xpath);
 		} else {
-			console.log("NOT CHECKEDD!");
 			result = $doc.xpath(xpath);
 		}
 	} catch(e) {
@@ -382,7 +380,8 @@ if (isDocumentValid) {
 	var $sidebar = $('#xpather-sidebar');
 	var $sidebarEntries = $('#xpather-sidebar-entries');
 	var $sidebarToggler = $('#xpather-sidebar-toggler');
-
+	var $refreshButton = $('#refreshPath');
+	var $saveButton = $('#normalizedSave');
 	var textarea = document.querySelector('textarea');
 	
 	$xpathInput[0].addEventListener('keydown', autosize);
@@ -403,6 +402,17 @@ if (isDocumentValid) {
 	});
 
 	$xpathForm.submit(function () {
+		'use strict';
+		find(false);
+		return false;
+	});
+
+	$saveButton.click(function(){
+		var currentValue = $xpathInput.val();
+		$xpathInput.val(normalizeXpath(currentValue));
+	});
+
+	$refreshButton.click(function(){
 		'use strict';
 		find(false);
 		return false;
