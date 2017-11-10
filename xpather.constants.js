@@ -1,10 +1,14 @@
 var xpatherHTML = '\
 	<xpather id="xpather">\
 		<form id="xpather-form">\
-			<input id="xpather-xpath" type="text" placeholder="enter XPath…" autocomplete="off" spellcheck="false" />\
+			<textarea id="xpather-xpath" placeholder="enter XPath…" autocomplete="off" spellcheck="false" />\
 		</form> \
 		<xpather id="xpather-result"></xpather>\
 		<xpather id="xpather-sidebar-toggler"></xpather>\
+		<label class="switch">\
+			<input id="isNormalized" type="checkbox">\
+			<span class="slider"></span>\
+		</label>\
 	</xpather>\
 	<xpather id="xpather-sidebar">\
 		<xpather id="xpather-sidebar-spacer"></xpather>\

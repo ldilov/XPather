@@ -80,7 +80,13 @@ function find(force) {
 	var result;
 
 	try {
-		result = $doc.xpath(xpath);
+		if($('#isNormalized')[0].checked){
+			console.log("CHECKEDD!");
+			result = $doc.expath(xpath);
+		} else {
+			console.log("NOT CHECKEDD!");
+			result = $doc.xpath(xpath);
+		}
 	} catch(e) {
 		$resultBox.addClass('xpather-no-results').text('Invalid XPath');
 		$sidebarEntries.empty().append(createSidebarErrorEntry(e.message));
@@ -376,6 +382,18 @@ if (isDocumentValid) {
 	var $sidebar = $('#xpather-sidebar');
 	var $sidebarEntries = $('#xpather-sidebar-entries');
 	var $sidebarToggler = $('#xpather-sidebar-toggler');
+
+	var textarea = document.querySelector('textarea');
+	
+	$xpathInput[0].addEventListener('keydown', autosize);
+				 
+	function autosize(){
+	  var el = this;
+	  setTimeout(function(){
+		el.style.cssText = 'height:auto; padding:0';
+		el.style.cssText = 'height:' + el.scrollHeight + 'px';
+	  },0);
+	}
 
 	$doc.mousedown(function (e) {
 		'use strict';
