@@ -2,7 +2,7 @@
 
 Chrome extension for XPath operations on current document, reliable and easy to use with fully featured XPath 2.0 support.
 
-[![Get it from Chrome Web Store][logo]](https://chrome.google.com/webstore/detail/xpather/gabekepgockchhemajjahpchlnkadiac)
+[![Get it from Chrome Web Store][logo]](https://chrome.google.com/webstore/detail/hjogncmeicjejlbjkmjikegidahpcpmj/publish-delayed)
 
 ### Features
 
