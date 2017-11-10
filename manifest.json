@@ -1,10 +1,10 @@
 {
 	"name": "XPather2",
 	"short_name": "XPather",
-	"description": "Chrome extension for XPath operations on current document, reliable and easy to use with fully featured XPath 2.0 support. It also supports xpath normalization.",
+	"description": "Chrome extension for XPath operations on current document. Features XPath 2.0 support, xpath normalization support.",
 	"author": "Lazar Dilov",
 	"homepage_url": "https://github.com/ldilov/",
-	"version": "0.7.7",
+	"version": "1.0.0",
 
 	"browser_action": {
 		"default_title": "Toggle XPather",
