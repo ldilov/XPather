@@ -4,7 +4,7 @@
 	"description": "Chrome extension for XPath operations on current document. Features XPath 2.0 support, xpath normalization support.",
 	"author": "Lazar Dilov",
 	"homepage_url": "https://github.com/ldilov/",
-	"version": "1.0.0",
+	"version": "1.1.0",
 
 	"browser_action": {
 		"default_title": "Toggle XPather",
@@ -51,7 +51,7 @@
 
 	"content_scripts": [
 		{
-			"css": ["css/xpather.css"],
+			"css": ["css/xpather.css", "css/font-awesome.min.css"],
 			"js": [
 				"lib/jquery-2.1.4.min.js",
 				"lib/jquery.xpath-0.3.1.min.js",

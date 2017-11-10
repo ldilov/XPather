@@ -10,8 +10,8 @@ var xpatherHTML = '\
 			<span class="slider"></span>\
 		</label>\
 		<label class="menu-nav">\
-			<i id="refreshPath" class="fa fa-refresh fa-4x"></i>\
-			<i id="normalizedSave" class="fa fa-floppy-o fa-4x"></i>\
+			<i id="refreshPath" class="fa fa-refresh fa-2x"></i>\
+			<i id="normalizedSave" class="fa fa-floppy-o fa-2x"></i>\
 		</label>\
 	</xpather>\
 	<xpather id="xpather-sidebar">\
