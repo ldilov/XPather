@@ -6,11 +6,16 @@ Chrome extension for XPath operations on current document, reliable and easy to 
 
 ### Features
 
-- evaluating XPath on current document (using [jQuery XPath](https://github.com/ilinsky/jquery-xpath))
+- evaluating XPath on current document (using [jQuery XPath](https://github.com/ldilov/jquery-xpath))
 - evaluating XPath 2.0 queries and expresions
 - matched nodes content preview in sidebar
 - functions and attributes shortcuts
 - scroll viewport to selected node
+
+### What's new
+
+- Added toggle switch, to toggle between searching xpath by normalizing the input or without normalization. When toggle is on, it uses jquery.expath(xpathSelector), when it is off, it uses jquery.xpath(xpathSelector).
+- Added multiline support for the xpath path field.
 
 ### Keyboard shortcuts
 
